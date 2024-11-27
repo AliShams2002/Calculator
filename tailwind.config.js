@@ -9,6 +9,9 @@ module.exports = {
        'orange-100': '#f9544c',
        'aqua': '#f3f3f3'
       },
+      boxShadow: {
+        'sm': '0px 0px 15px -5px rgba(0, 0, 60, 1)',
+      }
     },
   },
   plugins: [],

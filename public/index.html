@@ -6,35 +6,54 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Calculator</title>
 </head>
+
+<style>
+    #result, #operation{
+        width: 100%;
+        text-align: right;
+        color: #f3f3f3;
+        background-color: transparent;
+    }
+    #result:focus, #operation:focus{
+        content: '';
+        border: none;
+        outline: none;
+    }
+    
+</style>
+
 <body class="bg-purple-200">
     <div class="w-full h-screen flex items-center justify-center">
-        <div class="min-w-[350px] max-w-[450px] min-h-[450px] max-h-[550px] bg-purple-100 rounded-md grid grid-cols-1 gap-10 py-8 px-5">
+        <div class="max-w-[360px] bg-purple-100 rounded-md grid grid-cols-1 gap-10 py-8 px-5 shadow-2xl">
             <div class="w-full h-full flex flex-col items-end justify-end gap-5 text-3xl text-aqua">
-                <span>0</span>
-                <span>0</span>
+                <input type="text" id="result" placeholder="0">
+                <input type="text" id="operation" placeholder="0">
             </div>
-            <div class="w-full h-full grid grid-cols-4 gap-10 text-xl text-aqua">
-                <button>AC</button>
-                <button>DEL</button>
-                <button>/</button>
-                <button>x</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>-</button>
-                <button>6</button>
-                <button>5</button>
-                <button>4</button>
-                <button>+</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button class="row-span-2 bg-orange-100 rounded-md">=</button>
-                <button class="col-span-2">0</button>
-                <button>.</button>
+            <div class="w-full h-full grid grid-cols-4 gap-4 text-xl text-aqua">
+                <button class="btn font-semibold">AC</button>
+                <button class="btn font-semibold">DEL</button>
+                <button class="btn font-semibold">/</button>
+                <button class="btn font-semibold">*</button>
+                <button class="btn font-semibold p-4 rounded-full hover:shadow-sm">7</button>
+                <button class="btn font-semibold p-4 rounded-full hover:shadow-sm">8</button>
+                <button class="btn font-semibold p-4 rounded-full hover:shadow-sm">9</button>
+                <button class="btn font-semibold">-</button>
+                <button class="btn font-semibold p-4 rounded-full hover:shadow-sm">6</button>
+                <button class="btn font-semibold p-4 rounded-full hover:shadow-sm">5</button>
+                <button class="btn font-semibold p-4 rounded-full hover:shadow-sm">4</button>
+                <button class="btn font-semibold">+</button>
+                <button class="btn font-semibold p-4 rounded-full hover:shadow-sm">1</button>
+                <button class="btn font-semibold p-4 rounded-full hover:shadow-sm">2</button>
+                <button class="btn font-semibold p-4 rounded-full hover:shadow-sm">3</button>
+                <button class="btn font-semibold row-span-2 bg-orange-100 rounded-md">=</button>
+                <button class="btn font-semibold p-4 rounded-full hover:shadow-sm col-span-2">0</button>
+                <button class="btn font-semibold rounded-full hover:shadow-sm">.</button>
                 
             </div>
         </div>
     </div>
+
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
